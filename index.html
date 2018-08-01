@@ -1,0 +1,587 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Michael Dobinson">
+    <meta name="description" content="">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>FallSafe</title>
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
+    <!-- Plugin-CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Main-Stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <style type="text/css">
+        .bs-example{
+            margin: 20px;
+        }
+        .modal-content iframe{
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        /* Get iframe src attribute value i.e. YouTube video url
+        and store it in a variable */
+        var url = $("#demoVideo").attr('src');
+        
+        /* Assign empty url value to the iframe src attribute when
+        modal hide, which stop the video playing */
+        $("#myModal").on('hide.bs.modal', function(){
+            $("#demoVideo").attr('src', '');
+        });
+        
+        /* Assign the initially stored url back to the iframe src
+        attribute when modal is displayed again */
+        $("#myModal").on('show.bs.modal', function(){
+            $("#demoVideo").attr('src', url);
+        });
+    });
+    </script>
+
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body data-spy="scroll" data-target="#primary-menu">
+
+    <div class="preloader">
+        <div class="sk-folding-cube">
+            <div class="sk-cube1 sk-cube"></div>
+            <div class="sk-cube2 sk-cube"></div>
+            <div class="sk-cube4 sk-cube"></div>
+            <div class="sk-cube3 sk-cube"></div>
+        </div>
+    </div>
+    <!--Mainmenu-area-->
+    <div class="mainmenu-area" data-spy="affix" data-offset-top="100">
+        <div class="container">
+            <!--Logo-->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary-menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand logo">
+                    <img src="images/logo.png">
+                </a>
+            </div>
+            <!--Logo/-->
+            <nav class="collapse navbar-collapse" id="primary-menu">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#home-page">Home</a></li>
+                    <li><a href="#features-page">Features</a></li>
+                    <li><a href="#team-page">Team</a></li>
+                    <li><a href="#faq-page">FAQ</a></li>
+                    <li><a href="#contact-page">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!--Mainmenu-area/-->
+
+    
+
+    <!--Header-area-->
+    <header class="header-area overlay full-height relative v-center" id="home-page">
+        <div class="absolute anlge-bg"></div>
+        <div class="container">
+            <div class="row v-center">
+                <div class="col-xs-12 col-md-7 header-text">
+                    <h2>It’s all about Helping the Elderly</h2>
+                    <p>FallSafe helps keep loved ones safe while maintaining their independence and privacy. In the event of a fall, FallSafe helps contact the people closest to them and emergency services if needed.</p>
+                    
+                    <div class="bs-example">
+                        <a href="#myModal" class="button white" data-toggle="modal">Watch video</a>
+
+                        <div id="myModal" class="modal fade">
+                            <div class="modal-dialog">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title">FallSafe Demonstration</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <iframe id="demoVideo" width="560" height="315" src="https://www.youtube.com/embed/rLn-rNtn2fk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden-xs hidden-sm col-md-5 text-right">
+                    <img src="images/cause_of_injury.PNG">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Header-area/-->
+
+
+
+    <!--Feature-area-->
+    <section class="gray-bg section-padding" id="features-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4">
+                    <div class="box">
+                        <div class="box-icon">
+                            <img src="images/service-icon-1.png" alt="">
+                        </div>
+                        <h4>STAY INFORMED</h4>
+                        <p>Get instantly notified if your loved ones have fallen and need assistance.</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="box">
+                        <div class="box-icon">
+                            <img src="images/service-icon-2.png" alt="">
+                        </div>
+                        <h4>CONFIGURABLE</h4>
+                        <p>Adapted specifically for your application.</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="box">
+                        <div class="box-icon">
+                            <img src="images/service-icon-3.png" alt="">
+                        </div>
+                        <h4>TRACK DATA</h4>
+                        <p>Stay up to date on the status of your loved ones.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Feature-area/-->
+
+    <section class="angle-bg sky-bg section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div id="caption_slide" class="carousel slide caption-slider" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active row">
+                                <div class="v-center">
+                                    <div class="col-xs-12 col-md-6">
+                                        <div class="caption-title" data-animation="animated fadeInUp">
+                                            <h2>Micro-Doppler</h2>
+                                        </div>
+                                        <div class="caption-desc" data-animation="animated fadeInUp">
+                                            <p>FallSafe uses advanced technology to detect micro-doppler shifts associated with falls. Using machine learning algorithms it can determine if a fall has occured.</p>
+                                        </div>
+                                        <div class="caption-button" data-animation="animated fadeInUp">
+                                            <a href="#" class="button">Read more</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6">
+                                        <div class="caption-photo one" data-animation="animated fadeInRight">
+                                            <img src="images/classic_fall.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item row">
+                                <div class="v-center">
+                                    <div class="col-xs-12 col-md-6">
+                                        <div class="caption-title" data-animation="animated fadeInUp">
+                                            <h2>Machine Learning</h2>
+                                        </div>
+                                        <div class="caption-desc" data-animation="animated fadeInUp">
+                                            <p>AI determines if a fall has occurred. A softmax regression classifier is paired with stacked autoencoders for optimized detection, based on recent work by Jokanovic et al.[REF].</p>
+                                        </div>
+                                        <div class="caption-button" data-animation="animated fadeInUp">
+                                            <a href="#" class="button">Read more</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6">
+                                        <div class="caption-photo one" data-animation="animated fadeInRight">
+                                            <img src="images/deepnet.PNG" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item row">
+                                <div class="v-center">
+                                    <div class="col-xs-12 col-md-6">
+                                        <div class="caption-title" data-animation="animated fadeInUp">
+                                            <h2>Emergency Contacts</h2>
+                                        </div>
+                                        <div class="caption-desc" data-animation="animated fadeInUp">
+                                            <p>Emergency contacts can be contacted in the event of a fall. In any case, emergency services will be contacted if FallSafe is certain that there was a serious fall.</p>
+                                        </div>
+                                        <div class="caption-button" data-animation="animated fadeInUp">
+                                            <a href="#" class="button">Read more</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-md-3">
+                                        <div class="caption-photo one" data-animation="animated fadeInRight">
+                                            <img src="images/emergency_contacts.PNG" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item row">
+                                <div class="v-center">
+                                    <div class="col-xs-12 col-md-6">
+                                        <div class="caption-title" data-animation="animated fadeInUp">
+                                            <h2>Privacy</h2>
+                                        </div>
+                                        <div class="caption-desc" data-animation="animated fadeInUp">
+                                            <p>FallSafe cannot capture images, only the speed of movements, making it safe to use in private areas - unlike a camera. Falls can occur anywhere in the home, including the bedroom and bathroom.</p>
+                                        </div>
+                                        <div class="caption-button" data-animation="animated fadeInUp">
+                                            <a href="#" class="button">Read more</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6">
+                                        <div class="caption-photo one" data-animation="animated fadeInRight">
+                                            <img src="images/spy_camera.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators caption-indector">
+                            <li data-target="#caption_slide" data-slide-to="0" class="active">
+                                <strong>Micro-Doppler </strong>Advanced radar technology.
+                            </li>
+                            <li data-target="#caption_slide" data-slide-to="1">
+                                <strong>Machine Learning </strong>Cutting-edge artificial intelligence.
+                            </li>
+                            <li data-target="#caption_slide" data-slide-to="2">
+                                <strong>Contacts </strong>Get notified first.
+                            </li>
+                            <li data-target="#caption_slide" data-slide-to="3">
+                                <strong>Privacy </strong>Stay safe, not exposed.
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!--
+    <section class="gray-bg section-padding" id="feature-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
+                    <div class="page-title">
+                        <h2>FEATURES</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit voluptates, temporibus at, facere harum fugiat!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="box">
+                        <div class="box-icon">
+                            <img src="images/portfolio-icon-1.png" alt="">
+                        </div>
+                        <h3>Creative Design</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quas nulla est adipisci,</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="box">
+                        <div class="box-icon">
+                            <img src="images/portfolio-icon-2.png" alt="">
+                        </div>
+                        <h3>Unlimited Features</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quas nulla est adipisci,</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="box">
+                        <div class="box-icon">
+                            <img src="images/portfolio-icon-3.png" alt="">
+                        </div>
+                        <h3>Full Free Chat</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quas nulla est adipisci,</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="box">
+                        <div class="box-icon">
+                            <img src="images/portfolio-icon-4.png" alt="">
+                        </div>
+                        <h3>Retina ready</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quas nulla est adipisci,</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="box">
+                        <div class="box-icon">
+                            <img src="images/portfolio-icon-5.png" alt="">
+                        </div>
+                        <h3>High Resolution</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quas nulla est adipisci,</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="box">
+                        <div class="box-icon">
+                            <img src="images/portfolio-icon-6.png" alt="">
+                        </div>
+                        <h3>Clean Codes</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quas nulla est adipisci,</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+    <section class="section-padding gray-bg" id="team-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
+                    <div class="page-title">
+                        <h2>Team</h2>
+                        <p>Founded in 2018, FallSafe Inc. is a serious company with three members.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-16 col-sm-8 col-md-4">
+                    <div class="single-team">
+                        <div class="team-photo">
+                            <img src="images/michael.jpg" alt="">
+                        </div>
+                        <h4>MICHAEL DOBINSON</h4>
+                        <h6>CTO</h6>
+                        <ul class="social-menu">
+                            <li><a href="#"><i class="ti-facebook"></i></a></li>
+                            <li><a href="#"><i class="ti-twitter"></i></a></li>
+                            <li><a href="#"><i class="ti-linkedin"></i></a></li>
+                            <li><a href="#"><i class="ti-pinterest"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-16 col-sm-8 col-md-4">
+                    <div class="single-team">
+                        <div class="team-photo">
+                            <img src="images/riley.jpg" alt="">
+                        </div>
+                        <h4>RILEY CAMBON</h4>
+                        <h6>CEO</h6>
+                        <ul class="social-menu">
+                            <li><a href="#"><i class="ti-facebook"></i></a></li>
+                            <li><a href="#"><i class="ti-twitter"></i></a></li>
+                            <li><a href="#"><i class="ti-linkedin"></i></a></li>
+                            <li><a href="#"><i class="ti-pinterest"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-16 col-sm-8 col-md-4">
+                    <div class="single-team">
+                        <div class="team-photo">
+                            <img src="images/shane.jpg" alt="">
+                        </div>
+                        <h4>SHANE BLACK</h4>
+                        <h6>COO</h6>
+                        <ul class="social-menu">
+                            <li><a href="#"><i class="ti-facebook"></i></a></li>
+                            <li><a href="#"><i class="ti-twitter"></i></a></li>
+                            <li><a href="#"><i class="ti-linkedin"></i></a></li>
+                            <li><a href="#"><i class="ti-pinterest"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <section class="gray-bg section-padding" id="faq-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
+                    <div class="page-title">
+                        <h2>Why Choose FallSafe?</h2>
+                        <p>Take a look at all these reasons!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                    <div class="panel-group" id="accordion">
+                        <div class="panel">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true">Privacy Protection</a>
+                            </h4>
+                            <div id="collapse1" class="panel-collapse collapse in">
+                                <p>We're not peeking at you</p>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Accuracy</a>
+                            </h4>
+                            <div id="collapse2" class="panel-collapse collapse">
+                                <p>100% accurate</p>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Peace of Mind</a>
+                            </h4>
+                            <div id="collapse3" class="panel-collapse collapse">
+                                <p>It's nice to know that you'll be informed.</p>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">No other devices required.</a>
+                            </h4>
+                            <div id="collapse4" class="panel-collapse collapse">
+                                <p>FallSafe does not require the user to be wearing a device to detect falls.</p>
+                            </div>
+                        </div>
+						<div class="panel">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Acknowledgment</a>
+                            </h4>
+                            <div id="collapse5" class="panel-collapse collapse">
+                                <p>We would like to thank our project supervisor, Dr. Peter Driessen, and Ahmed Youssef for all of their support and technical knowledge during this project. We would also like to thank Paul Fedrigo and Rob Fichtner for giving us access to the communications laboratory and making equipment available to us. Funding from the chairman was greatly appreciated as it allowed the project to reach its full potential. Lastly we would like to thank Ilamparithi Thiruma and all of the TAs for making this course possible.</p>
+                            </div>
+                        </div>
+						<div class="panel">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">References</a>
+                            </h4>
+                            <div id="collapse6" class="panel-collapse collapse">
+                                <p>[1] Jokanovic, ...</p>
+								<p>[2] Reference 2...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <footer class="footer-area relative sky-bg" id="contact-page">
+        <div class="absolute footer-bg"></div>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
+                        <div class="page-title">
+                            <h2>Contact us</h2>
+                            <p>We would love to hear from you!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-4">
+                        <address class="side-icon-boxes">
+                            <div class="side-icon-box">
+                                <div class="side-icon">
+                                    <img src="images/location-arrow.png" alt="">
+                                </div>
+                                <p><strong>Address: </strong> University of Victoria <br />Canada</p>
+                            </div>
+                            <div class="side-icon-box">
+                                <div class="side-icon">
+                                    <img src="images/mail-arrow.png" alt="">
+                                </div>
+                                <p><strong>E-mail: </strong>
+                                    <a href="mailto:youremail@example.com">youremail@example.com</a> <br />
+                                    <a href="mailto:youremail@example.com">example@mail.com</a>
+                                </p>
+                            </div>
+                        </address>
+                    </div>
+                    <div class="col-xs-12 col-md-8">
+                        <form action="process.php" id="contact-form" method="post" class="contact-form">
+                            <div class="form-double">
+                                <input type="text" id="form-name" name="form-name" placeholder="Your name" class="form-control" required="required">
+                                <input type="email" id="form-email" name="form-email" class="form-control" placeholder="E-mail address" required="required">
+                            </div>
+                            <input type="text" id="form-subject" name="form-subject" class="form-control" placeholder="Message topic">
+                            <textarea name="message" id="form-message" name="form-message" rows="5" class="form-control" placeholder="Your message" required="required"></textarea>
+                            <button type="sibmit" class="button">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 pull-right">
+                        <ul class="social-menu text-right x-left">
+                            <li><a href="https://www.youtube.com/channel/UCPlxeDPYRAQHt1XPjTx1Vog/"><i class="ti-youtube"></i></a></li>
+                            <li><a href="#"><i class="ti-github"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <p>FallSafe is a serious system that can detect falls. It's really good at it and this end note should give you complete confidence in our system.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <p>&copy;Copyright FallSafe 2018 All right reserved.  This template is made by <a href="https://colorlib.com">Colorlib</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <!--Vendor-JS-->
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <!--Plugin-JS-->
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/contact-form.js"></script>
+    <script src="js/jquery.parallax-1.1.3.js"></script>
+    <script src="js/scrollUp.min.js"></script>
+    <script src="js/magnific-popup.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <!--Main-active-JS-->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
